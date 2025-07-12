@@ -13,9 +13,9 @@ import cookieParser from 'cookie-parser';
 const app =express();
 dotenv.config();
 const corsOptions = {
-  origin: process.env.FRONTEND_URL, // Replace with your frontend URL
-  optionsSuccessStatus: 200,       // For legacy browser support
-  credentials: true,               // Allow cookies to be sent
+  origin: "https://newcourse-1.onrender.com",  // Your frontend URL
+  optionsSuccessStatus: 200,
+  credentials: true,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: "Content-Type, Authorization"
 };
